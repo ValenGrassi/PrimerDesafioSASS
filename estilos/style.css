@@ -31,10 +31,39 @@ h1{
 
 }
 
+header ul li:hover{
+    transform: scale(3);
+    transition: all 2s;
+}
+
+.titulo1:hover{
+    transform: rotate(360deg);
+    transition: all 2s;
+}
+
 .logo{ 
     display: block;
     margin: auto;
     height: 300px;
+}
+
+.logo:hover{
+    animation: messi 2s;
+}
+
+@keyframes messi{
+    0%{
+        transform: translatex(300px)  
+    }
+    25%{
+        transform: translatex(-300px)
+    }
+    50%{
+        transform: scale(2);
+    }
+    75%{
+        transform: rotate(360deg);
+    };
 }
 
 .soporte{
